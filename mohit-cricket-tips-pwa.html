@@ -1,0 +1,2486 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohit Cricket Tips - Expert Cricket Predictions & Free Tips</title>
+
+<!-- SEO Meta Tags -->
+<meta name="description" content="Mohit Cricket Tips - Best free cricket predictions, expert tips, win rate tracker, IPL tips, T20 predictions. Har match ka expert analysis. Download our app!">
+<meta name="keywords" content="mohit cricket tips, cricket predictions, free cricket tips, IPL tips, T20 tips, cricket expert, cricket betting tips, match prediction, cricket analysis">
+<meta name="author" content="Mohit Cricket Tips">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://mohitcrickettips.github.io/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mohit Cricket Tips - Expert Predictions & Free Tips">
+<meta property="og:description" content="Best free cricket predictions, expert tips, IPL tips, T20 predictions. Har match ka expert analysis. App bhi download karo!">
+<meta property="og:image" content="https://i.imgur.com/cricket-og.png">
+<meta property="og:url" content="">
+<meta property="og:site_name" content="Mohit Cricket Tips">
+<meta property="og:locale" content="hi_IN">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mohit Cricket Tips - Expert Predictions">
+<meta name="twitter:description" content="Free cricket tips & predictions. Win Rate dekho, IPL tips, T20 analysis!">
+<meta name="twitter:image" content="https://i.imgur.com/cricket-og.png">
+
+<!-- PWA Manifest (inline) -->
+<link rel="manifest" id="pwa-manifest-link">
+
+<!-- PWA Theme -->
+<meta name="theme-color" content="#00e676">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="MCT Tips">
+
+<!-- Apple Touch Icon (emoji-based SVG) -->
+<link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2300e676'/><text y='.9em' font-size='80' x='10'>🏏</text></svg>">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2300e676'/><text y='.9em' font-size='80' x='10'>🏏</text></svg>">
+
+<script>
+// Dynamic OG URL
+document.querySelector&&document.querySelector('meta[property="og:url"]')&&document.querySelector('meta[property="og:url"]').setAttribute('content',window.location.href.split('#')[0]);
+
+// Inline PWA Manifest generation
+const manifest = {
+  name: "Mohit Cricket Tips",
+  short_name: "MCT Tips",
+  description: "Expert cricket predictions, free tips, IPL analysis & win rate tracker",
+  start_url: "./",
+  display: "standalone",
+  background_color: "#0a0e0a",
+  theme_color: "#00e676",
+  orientation: "portrait",
+  lang: "hi",
+  categories: ["sports", "entertainment"],
+  icons: [
+    { src: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect width='192' height='192' rx='30' fill='%230a0e0a'/><text y='.85em' font-size='140' x='20'>🏏</text></svg>", sizes: "192x192", type: "image/svg+xml", purpose: "any maskable" },
+    { src: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect width='512' height='512' rx='80' fill='%230a0e0a'/><text y='.85em' font-size='380' x='50'>🏏</text></svg>", sizes: "512x512", type: "image/svg+xml", purpose: "any maskable" }
+  ],
+  screenshots: [],
+  shortcuts: [
+    { name: "Latest Tips", url: "./#home", description: "Aaj ki cricket tips dekho" },
+    { name: "Videos", url: "./#videos", description: "Cricket analysis videos" }
+  ]
+};
+const blob = new Blob([JSON.stringify(manifest)], {type:'application/json'});
+document.getElementById ? document.addEventListener('DOMContentLoaded', () => {
+  const link = document.getElementById('pwa-manifest-link');
+  if(link) link.href = URL.createObjectURL(blob);
+}) : null;
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;600;700&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0e0a;
+    --surface: #111811;
+    --card: #161e16;
+    --border: #1e2e1e;
+    --green: #00e676;
+    --green2: #00c853;
+    --gold: #ffd600;
+    --red: #ff1744;
+    --blue: #2196f3;
+    --purple: #9c27b0;
+    --text: #e8f5e9;
+    --muted: #607d5f;
+    --accent: #69f0ae;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Rajdhani', 'Noto Sans Devanagari', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+    padding-bottom: 80px;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background:
+      radial-gradient(ellipse at 20% 20%, rgba(0,230,118,0.05) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 80%, rgba(0,200,83,0.04) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* ---- HEADER ---- */
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border);
+    background: rgba(10,14,10,0.97);
+    backdrop-filter: blur(12px);
+  }
+
+  .header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .logo { display: flex; align-items: center; gap: 10px; }
+
+  .logo-icon {
+    width: 40px; height: 40px;
+    background: linear-gradient(135deg, var(--green), #ffd600);
+    border-radius: 11px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 18px; letter-spacing: 1px;
+    color: #0a0e0a;
+    box-shadow: 0 0 20px rgba(0,230,118,0.4);
+    flex-shrink: 0;
+  }
+
+  .logo-text {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 22px;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, var(--green), var(--gold));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .logo-sub {
+    font-size: 10px;
+    color: var(--muted);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-top: -3px;
+  }
+
+  .header-right { display: flex; align-items: center; gap: 8px; }
+
+  .live-badge {
+    display: flex; align-items: center; gap: 5px;
+    background: rgba(255,23,68,0.15);
+    border: 1px solid rgba(255,23,68,0.3);
+    padding: 4px 10px; border-radius: 20px;
+    font-size: 11px; font-weight: 700; color: var(--red); letter-spacing: 1px;
+  }
+
+  .live-dot {
+    width: 6px; height: 6px;
+    background: var(--red); border-radius: 50%;
+    animation: pulse 1.2s infinite;
+  }
+
+  @keyframes pulse {
+    0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.8)}
+  }
+
+  .admin-btn {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--muted);
+    padding: 5px 12px; border-radius: 8px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 13px; font-weight: 600; cursor: pointer;
+    transition: all .2s; letter-spacing: 1px;
+  }
+  .admin-btn:hover { border-color: var(--green); color: var(--green); }
+
+  /* ---- VISITOR + CHEATER BAR ---- */
+  .info-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .visitor-box {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(0,230,118,0.07);
+    border: 1px solid rgba(0,230,118,0.2);
+    border-radius: 20px;
+    padding: 5px 14px;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: 0.5px;
+    cursor: default;
+  }
+
+  .visitor-icon { font-size: 14px; }
+
+  .visitor-count {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 16px;
+    color: var(--green);
+    letter-spacing: 1px;
+  }
+
+  .cheater-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255,23,68,0.12);
+    border: 1px solid rgba(255,23,68,0.3);
+    border-radius: 20px;
+    padding: 5px 14px;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--red);
+    cursor: pointer;
+    transition: all .2s;
+    letter-spacing: 0.5px;
+    font-family: 'Rajdhani', sans-serif;
+  }
+
+  .cheater-btn:hover {
+    background: rgba(255,23,68,0.2);
+    transform: translateY(-1px);
+  }
+
+  .cheater-count-badge {
+    background: var(--red);
+    color: #fff;
+    border-radius: 10px;
+    padding: 1px 7px;
+    font-size: 11px;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+    min-width: 20px;
+    text-align: center;
+  }
+
+  /* ---- STATS BAR ---- */
+  .stats-bar {
+    position: relative; z-index: 5;
+    display: flex;
+    border-bottom: 1px solid var(--border);
+    background: var(--surface);
+    overflow-x: auto;
+  }
+
+  .stat-item {
+    flex: 1; min-width: 80px;
+    padding: 12px 16px;
+    text-align: center;
+    border-right: 1px solid var(--border);
+  }
+  .stat-item:last-child { border-right: none; }
+
+  .stat-num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 26px; letter-spacing: 1px; line-height: 1;
+  }
+  .stat-num.green { color: var(--green); }
+  .stat-num.gold { color: var(--gold); }
+  .stat-num.red { color: var(--red); }
+
+  .stat-label {
+    font-size: 10px;
+    color: var(--muted);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 3px;
+  }
+
+  /* ---- BOTTOM NAV ---- */
+  .bottom-nav {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    z-index: 50;
+    display: flex;
+    background: rgba(10,14,10,0.98);
+    border-top: 1px solid var(--border);
+    backdrop-filter: blur(12px);
+  }
+
+  .nav-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 4px 8px;
+    cursor: pointer;
+    transition: all .2s;
+    border: none;
+    background: none;
+    color: var(--muted);
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    gap: 3px;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .nav-item.active { color: var(--green); }
+  .nav-item:hover { color: var(--accent); }
+
+  .nav-icon { font-size: 20px; line-height: 1; }
+
+  /* ---- PAGES ---- */
+  .page { display: none; position: relative; z-index: 5; }
+  .page.active { display: block; }
+
+  /* ---- MAIN CONTENT ---- */
+  main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 24px 16px;
+  }
+
+  .section-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 18px; letter-spacing: 3px;
+    color: var(--muted);
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .section-title::after {
+    content: ''; flex: 1;
+    height: 1px; background: var(--border);
+  }
+
+  /* ---- TIP CARD ---- */
+  .tips-grid { display: flex; flex-direction: column; gap: 14px; }
+
+  .tip-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px 22px;
+    position: relative;
+    overflow: hidden;
+    animation: fadeUp .4s ease both;
+    transition: border-color .2s, transform .2s;
+  }
+  .tip-card:hover { border-color: rgba(0,230,118,.3); transform: translateY(-2px); }
+  .tip-card::before {
+    content: '';
+    position: absolute; left: 0; top: 0; bottom: 0;
+    width: 4px; border-radius: 16px 0 0 16px;
+  }
+  .tip-card.win::before { background: var(--green); }
+  .tip-card.loss::before { background: var(--red); }
+  .tip-card.pending::before { background: var(--gold); }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .tip-header {
+    display: flex; justify-content: space-between;
+    align-items: flex-start; margin-bottom: 14px;
+    flex-wrap: wrap; gap: 10px;
+  }
+
+  .match-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px; letter-spacing: 1px; color: var(--text); line-height: 1.1;
+  }
+
+  .match-meta { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+
+  .badge {
+    padding: 3px 9px; border-radius: 6px;
+    font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
+  }
+  .badge-format { background: rgba(0,230,118,.1); color: var(--green); border: 1px solid rgba(0,230,118,.2); }
+  .badge-win { background: rgba(0,230,118,.15); color: var(--green); border: 1px solid rgba(0,230,118,.3); }
+  .badge-loss { background: rgba(255,23,68,.15); color: var(--red); border: 1px solid rgba(255,23,68,.3); }
+  .badge-pending { background: rgba(255,214,0,.12); color: var(--gold); border: 1px solid rgba(255,214,0,.25); }
+
+  .tip-prediction {
+    background: rgba(0,230,118,.06);
+    border: 1px solid rgba(0,230,118,.12);
+    border-radius: 10px; padding: 12px 16px;
+    margin-bottom: 12px;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .pred-icon { font-size: 20px; }
+  .pred-label { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 2px; }
+  .pred-value { font-size: 17px; font-weight: 700; color: var(--accent); letter-spacing: .5px; }
+  .tip-analysis { font-size: 14px; color: #a5c9a3; line-height: 1.6; margin-bottom: 14px; }
+
+  .tip-footer {
+    display: flex; justify-content: space-between;
+    align-items: center; font-size: 11px;
+    color: var(--muted); flex-wrap: wrap; gap: 8px;
+    padding-top: 12px; border-top: 1px solid var(--border);
+  }
+
+  .confidence-bar { display: flex; align-items: center; gap: 8px; }
+  .conf-track { width: 70px; height: 4px; background: var(--border); border-radius: 2px; overflow: hidden; }
+  .conf-fill { height: 100%; border-radius: 2px; background: linear-gradient(90deg, var(--green2), var(--green)); transition: width .6s ease; }
+
+  /* ---- VIDEO SECTION ---- */
+  .video-grid { display: flex; flex-direction: column; gap: 14px; }
+
+  .video-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+    animation: fadeUp .4s ease both;
+    transition: border-color .2s, transform .2s;
+  }
+  .video-card:hover { border-color: rgba(33,150,243,.3); transform: translateY(-2px); }
+
+  .video-thumb {
+    position: relative;
+    background: #0d1a0d;
+    cursor: pointer;
+  }
+  .video-thumb video, .video-thumb img {
+    width: 100%; max-height: 220px;
+    object-fit: cover; display: block;
+  }
+  .video-play-overlay {
+    position: absolute; inset: 0;
+    display: flex; align-items: center; justify-content: center;
+    background: rgba(0,0,0,.35);
+    transition: background .2s;
+  }
+  .video-thumb:hover .video-play-overlay { background: rgba(0,0,0,.2); }
+  .play-btn-circle {
+    width: 54px; height: 54px;
+    background: rgba(0,230,118,.9);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px; color: #0a0e0a;
+    box-shadow: 0 4px 20px rgba(0,230,118,.4);
+  }
+
+  .video-info { padding: 14px 18px; }
+  .video-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 18px; letter-spacing: 1px; color: var(--text); margin-bottom: 4px;
+  }
+  .video-desc { font-size: 13px; color: var(--muted); line-height: 1.5; }
+  .video-date { font-size: 11px; color: var(--muted); margin-top: 6px; letter-spacing: 1px; }
+
+  .video-empty {
+    text-align: center; padding: 60px 20px; color: var(--muted);
+  }
+
+  /* ---- GIVEAWAY SECTION ---- */
+  .giveaway-grid { display: flex; flex-direction: column; gap: 14px; }
+
+  .giveaway-card {
+    background: linear-gradient(135deg, #1a1200, #1e1600);
+    border: 1px solid rgba(255,214,0,.2);
+    border-radius: 16px;
+    padding: 22px;
+    position: relative;
+    overflow: hidden;
+    animation: fadeUp .4s ease both;
+    transition: border-color .2s, transform .2s;
+  }
+  .giveaway-card:hover { border-color: rgba(255,214,0,.4); transform: translateY(-2px); }
+  .giveaway-card::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--gold), #ff9800, var(--gold));
+  }
+
+  .giveaway-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; gap: 10px; flex-wrap: wrap; }
+  .giveaway-title { font-family: 'Bebas Neue', sans-serif; font-size: 22px; letter-spacing: 1px; color: var(--gold); line-height: 1.1; }
+  .giveaway-badge {
+    background: rgba(255,214,0,.15);
+    border: 1px solid rgba(255,214,0,.3);
+    color: var(--gold);
+    padding: 3px 10px; border-radius: 20px;
+    font-size: 10px; font-weight: 700; letter-spacing: 1px;
+  }
+
+  .giveaway-prize {
+    background: rgba(255,214,0,.06);
+    border: 1px solid rgba(255,214,0,.15);
+    border-radius: 10px; padding: 14px;
+    margin-bottom: 12px;
+    font-size: 16px; font-weight: 700; color: var(--text);
+  }
+  .giveaway-prize-label { font-size: 10px; color: var(--gold); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 6px; }
+
+  .giveaway-desc { font-size: 14px; color: #c5b07a; line-height: 1.6; margin-bottom: 14px; }
+
+  .giveaway-footer { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+  .giveaway-date { font-size: 11px; color: var(--muted); }
+
+  .giveaway-img { width: 100%; max-height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 14px; border: 1px solid rgba(255,214,0,.15); }
+
+  /* ---- NEWS SECTION ---- */
+  .news-grid { display: flex; flex-direction: column; gap: 12px; }
+
+  .news-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px 20px;
+    position: relative;
+    animation: fadeUp .4s ease both;
+    transition: border-color .2s, transform .2s;
+  }
+  .news-card:hover { border-color: rgba(33,150,243,.3); transform: translateY(-2px); }
+  .news-card::before {
+    content: '';
+    position: absolute; left: 0; top: 0; bottom: 0;
+    width: 4px;
+    border-radius: 14px 0 0 14px;
+    background: var(--blue);
+  }
+
+  .news-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; gap: 10px; flex-wrap: wrap; }
+  .news-title { font-family: 'Bebas Neue', sans-serif; font-size: 18px; letter-spacing: 1px; color: var(--text); line-height: 1.2; }
+  .news-tag {
+    background: rgba(33,150,243,.12);
+    border: 1px solid rgba(33,150,243,.25);
+    color: var(--blue);
+    padding: 2px 9px; border-radius: 6px;
+    font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .news-body { font-size: 14px; color: #a5c9a3; line-height: 1.6; margin-bottom: 10px; }
+  .news-footer { font-size: 11px; color: var(--muted); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 6px; }
+  .news-img { width: 100%; max-height: 180px; object-fit: cover; border-radius: 8px; margin-bottom: 10px; border: 1px solid var(--border); }
+
+  /* ---- CHEATERS SECTION ---- */
+  .cheaters-grid { display: flex; flex-direction: column; gap: 12px; }
+
+  .cheater-card {
+    background: linear-gradient(135deg, #1a0808, #150808);
+    border: 1px solid rgba(255,23,68,.2);
+    border-radius: 14px;
+    padding: 18px 20px;
+    position: relative;
+    overflow: hidden;
+    animation: fadeUp .4s ease both;
+    transition: border-color .2s, transform .2s;
+  }
+  .cheater-card:hover { border-color: rgba(255,23,68,.4); transform: translateY(-2px); }
+  .cheater-card::before {
+    content: '';
+    position: absolute; left: 0; top: 0; bottom: 0;
+    width: 4px; border-radius: 14px 0 0 14px;
+    background: var(--red);
+  }
+
+  .cheater-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; gap: 10px; flex-wrap: wrap; }
+  .cheater-name { font-family: 'Bebas Neue', sans-serif; font-size: 20px; letter-spacing: 1px; color: var(--red); line-height: 1.1; }
+  .cheater-platform {
+    background: rgba(255,23,68,.12);
+    border: 1px solid rgba(255,23,68,.25);
+    color: var(--red);
+    padding: 2px 9px; border-radius: 6px;
+    font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
+  }
+  .cheater-desc { font-size: 14px; color: #c9a5a5; line-height: 1.6; margin-bottom: 10px; }
+  .cheater-footer { font-size: 11px; color: var(--muted); }
+
+  .warning-banner {
+    background: rgba(255,23,68,.08);
+    border: 1px solid rgba(255,23,68,.2);
+    border-radius: 12px;
+    padding: 14px 18px;
+    margin-bottom: 16px;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  .warning-icon { font-size: 22px; flex-shrink: 0; }
+  .warning-text { font-size: 13px; color: #e57373; line-height: 1.6; }
+
+  /* ---- EMPTY STATE ---- */
+  .empty-state { text-align: center; padding: 70px 20px; color: var(--muted); }
+  .empty-icon { font-size: 56px; margin-bottom: 16px; opacity: .4; }
+  .empty-title { font-family: 'Bebas Neue', sans-serif; font-size: 22px; letter-spacing: 3px; margin-bottom: 8px; }
+  .empty-sub { font-size: 14px; line-height: 1.6; }
+
+  /* ---- MODAL ---- */
+  .modal-overlay {
+    position: fixed; inset: 0;
+    background: rgba(0,0,0,.87);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+  }
+  .modal-overlay.show { display: flex; }
+
+  .modal {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    width: 100%; max-width: 560px;
+    max-height: 92vh; overflow-y: auto;
+    animation: modalIn .3s ease;
+  }
+  @keyframes modalIn {
+    from { opacity: 0; transform: scale(.95) translateY(20px); }
+    to { opacity: 1; transform: scale(1) translateY(0); }
+  }
+
+  .modal-header {
+    padding: 22px 26px 0;
+    display: flex; justify-content: space-between; align-items: center;
+    position: sticky; top: 0; background: var(--card); z-index: 2;
+    border-bottom: 1px solid var(--border); padding-bottom: 14px;
+  }
+
+  .modal-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 22px; letter-spacing: 2px; color: var(--green);
+  }
+  .close-btn {
+    background: none; border: none; color: var(--muted);
+    font-size: 20px; cursor: pointer; padding: 4px; line-height: 1; transition: color .2s;
+  }
+  .close-btn:hover { color: var(--text); }
+
+  .modal-body { padding: 20px 26px 26px; }
+
+  .form-group { margin-bottom: 16px; }
+
+  label {
+    display: block; font-size: 11px; font-weight: 700;
+    letter-spacing: 2px; color: var(--muted);
+    text-transform: uppercase; margin-bottom: 7px;
+  }
+
+  input, textarea, select {
+    width: 100%;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 11px 14px;
+    color: var(--text);
+    font-family: 'Rajdhani', 'Noto Sans Devanagari', sans-serif;
+    font-size: 14px; outline: none;
+    transition: border-color .2s;
+    -webkit-appearance: none;
+  }
+  input:focus, textarea:focus, select:focus { border-color: var(--green); }
+  textarea { resize: vertical; min-height: 80px; }
+  select option { background: var(--card); }
+
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+  .btn-primary {
+    width: 100%;
+    background: linear-gradient(135deg, var(--green2), var(--green));
+    border: none; border-radius: 12px; padding: 13px;
+    color: #0a0e0a;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 17px; letter-spacing: 2px;
+    cursor: pointer; transition: opacity .2s, transform .1s; margin-top: 6px;
+  }
+  .btn-primary:hover { opacity: .9; transform: translateY(-1px); }
+  .btn-primary:active { transform: translateY(0); }
+
+  .btn-danger {
+    width: 100%;
+    background: rgba(255,23,68,.15);
+    border: 1px solid rgba(255,23,68,.35);
+    border-radius: 12px; padding: 13px;
+    color: var(--red);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 17px; letter-spacing: 2px;
+    cursor: pointer; transition: opacity .2s; margin-top: 6px;
+  }
+  .btn-danger:hover { opacity: .8; }
+
+  .btn-gold {
+    width: 100%;
+    background: linear-gradient(135deg, #b8860b, var(--gold));
+    border: none; border-radius: 12px; padding: 13px;
+    color: #0a0e0a;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 17px; letter-spacing: 2px;
+    cursor: pointer; transition: opacity .2s; margin-top: 6px;
+  }
+  .btn-gold:hover { opacity: .9; }
+
+  .btn-blue {
+    width: 100%;
+    background: rgba(33,150,243,.15);
+    border: 1px solid rgba(33,150,243,.35);
+    border-radius: 12px; padding: 13px;
+    color: var(--blue);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 17px; letter-spacing: 2px;
+    cursor: pointer; transition: opacity .2s; margin-top: 6px;
+  }
+  .btn-blue:hover { opacity: .8; }
+
+  .error-msg { color: var(--red); font-size: 13px; margin-top: -8px; margin-bottom: 10px; display: none; }
+
+  /* Delete button on cards */
+  .delete-btn {
+    background: none; border: none;
+    color: var(--muted); font-size: 13px;
+    cursor: pointer; padding: 2px 6px; border-radius: 6px; transition: all .2s; display: none;
+  }
+  .delete-btn:hover { background: rgba(255,23,68,.15); color: var(--red); }
+  body.admin-mode .delete-btn { display: inline-flex; }
+
+  /* Admin FAB */
+  .admin-fab {
+    position: fixed; bottom: 88px; right: 22px;
+    background: linear-gradient(135deg, var(--green2), var(--green));
+    color: #0a0e0a; border: none; border-radius: 50%;
+    width: 54px; height: 54px; font-size: 24px;
+    cursor: pointer; box-shadow: 0 8px 24px rgba(0,230,118,.35);
+    z-index: 45; display: none;
+    align-items: center; justify-content: center; transition: transform .2s;
+  }
+  .admin-fab:hover { transform: scale(1.08); }
+  body.admin-mode .admin-fab { display: flex; }
+
+  .admin-indicator {
+    display: none;
+    position: fixed; bottom: 88px; left: 22px;
+    background: rgba(0,230,118,.1);
+    border: 1px solid rgba(0,230,118,.3);
+    color: var(--green);
+    padding: 8px 16px; border-radius: 20px;
+    font-size: 12px; font-weight: 700; letter-spacing: 1px;
+    z-index: 45; cursor: pointer;
+  }
+  body.admin-mode .admin-indicator { display: block; }
+
+  /* Photo upload */
+  .photo-upload-area {
+    border: 2px dashed var(--border);
+    border-radius: 12px; padding: 18px;
+    text-align: center; cursor: pointer;
+    transition: all .2s; position: relative; margin-bottom: 14px;
+  }
+  .photo-upload-area:hover { border-color: var(--green); background: rgba(0,230,118,.04); }
+  .photo-upload-area input[type="file"] {
+    position: absolute; inset: 0; opacity: 0; cursor: pointer;
+    width: 100%; height: 100%; padding: 0; border: none; background: none;
+  }
+  .photo-upload-icon { font-size: 28px; margin-bottom: 6px; }
+  .photo-upload-text { font-size: 13px; color: var(--muted); }
+  .photo-upload-text span { color: var(--green); font-weight: 700; }
+  .photo-preview { width: 100%; max-height: 150px; object-fit: cover; border-radius: 10px; display: none; margin-top: 8px; }
+  .photo-preview.show { display: block; }
+  .remove-photo {
+    display: none;
+    background: rgba(255,23,68,.15); border: 1px solid rgba(255,23,68,.3);
+    color: var(--red); font-size: 12px; padding: 4px 12px; border-radius: 6px;
+    cursor: pointer; margin-top: 8px; font-family: 'Rajdhani', sans-serif; font-weight: 600;
+  }
+  .remove-photo.show { display: inline-block; }
+
+  /* Tip image */
+  .tip-image {
+    width: 100%; max-height: 200px; object-fit: cover;
+    border-radius: 10px; margin-bottom: 12px; border: 1px solid var(--border); cursor: zoom-in;
+  }
+
+  /* Share buttons */
+  .share-row {
+    display: flex; gap: 7px; align-items: center;
+    padding-top: 12px; border-top: 1px solid var(--border); flex-wrap: wrap;
+  }
+  .share-label { font-size: 10px; color: var(--muted); letter-spacing: 1px; text-transform: uppercase; font-weight: 700; margin-right: 2px; }
+  .share-btn {
+    display: flex; align-items: center; gap: 4px;
+    padding: 5px 10px; border-radius: 8px;
+    font-size: 11px; font-weight: 700; cursor: pointer; border: none;
+    font-family: 'Rajdhani', sans-serif; letter-spacing: .5px;
+    transition: opacity .2s, transform .1s;
+  }
+  .share-btn:hover { opacity: .85; transform: translateY(-1px); }
+  .share-btn:active { transform: translateY(0); }
+  .share-wa { background: #25D366; color: #fff; }
+  .share-tg { background: #229ED9; color: #fff; }
+  .share-tw { background: #000; color: #fff; border: 1px solid #333; }
+  .share-copy { background: rgba(0,230,118,.1); border: 1px solid rgba(0,230,118,.3) !important; color: var(--green); }
+  .share-btn svg { width: 13px; height: 13px; flex-shrink: 0; }
+
+  /* Tabs in admin modal */
+  .admin-tabs {
+    display: flex; gap: 4px; margin-bottom: 18px;
+    background: var(--surface); border-radius: 10px; padding: 4px;
+    flex-wrap: wrap;
+  }
+  .admin-tab {
+    flex: 1; padding: 8px 6px; border: none;
+    background: none; color: var(--muted);
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 11px; font-weight: 700; letter-spacing: 1px;
+    text-transform: uppercase; cursor: pointer; border-radius: 8px;
+    transition: all .2s; white-space: nowrap;
+  }
+  .admin-tab.active { background: var(--card); color: var(--green); }
+
+  /* Visitor edit in admin */
+  .visitor-edit-row {
+    display: flex; gap: 10px; align-items: center;
+  }
+  .visitor-edit-row input { flex: 1; }
+  .visitor-edit-row button {
+    background: linear-gradient(135deg, var(--green2), var(--green));
+    border: none; border-radius: 10px; padding: 11px 18px;
+    color: #0a0e0a; font-family: 'Bebas Neue', sans-serif;
+    font-size: 16px; letter-spacing: 1px; cursor: pointer;
+    white-space: nowrap; transition: opacity .2s;
+  }
+  .visitor-edit-row button:hover { opacity: .9; }
+
+  /* Copied toast */
+  .copied-toast {
+    position: fixed; bottom: 90px; left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    background: var(--green); color: #0a0e0a;
+    padding: 10px 24px; border-radius: 20px;
+    font-weight: 700; font-size: 14px; letter-spacing: 1px;
+    z-index: 200; opacity: 0; transition: all .3s ease; pointer-events: none;
+  }
+  .copied-toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+  /* Video upload area */
+  .video-upload-area {
+    border: 2px dashed var(--border);
+    border-radius: 12px; padding: 18px;
+    text-align: center; cursor: pointer;
+    transition: all .2s; position: relative; margin-bottom: 14px;
+  }
+  .video-upload-area:hover { border-color: var(--blue); background: rgba(33,150,243,.04); }
+  .video-upload-area input[type="file"] {
+    position: absolute; inset: 0; opacity: 0; cursor: pointer;
+    width: 100%; height: 100%; padding: 0; border: none; background: none;
+  }
+
+  /* ---- SHARE SITE BUTTON ---- */
+  .share-site-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: linear-gradient(135deg, rgba(0,230,118,0.15), rgba(0,200,83,0.1));
+    border: 1px solid rgba(0,230,118,0.4);
+    border-radius: 20px;
+    padding: 5px 14px;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--green);
+    cursor: pointer;
+    transition: all .2s;
+    letter-spacing: 0.5px;
+    font-family: 'Rajdhani', sans-serif;
+    text-decoration: none;
+  }
+  .share-site-btn:hover {
+    background: linear-gradient(135deg, rgba(0,230,118,0.25), rgba(0,200,83,0.18));
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0,230,118,0.2);
+  }
+  .share-site-btn .share-site-icon { font-size: 14px; }
+
+  /* ---- DOMAIN GUIDE MODAL ---- */
+  .domain-guide-modal {
+    position: fixed; inset: 0;
+    background: rgba(0,0,0,.9);
+    backdrop-filter: blur(12px);
+    z-index: 200;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+  }
+  .domain-guide-modal.show { display: flex; }
+  .domain-guide-box {
+    background: var(--card);
+    border: 1px solid rgba(0,230,118,.3);
+    border-radius: 20px;
+    width: 100%; max-width: 500px;
+    max-height: 88vh; overflow-y: auto;
+    animation: modalIn .3s ease;
+    padding: 0;
+  }
+  .domain-guide-header {
+    background: linear-gradient(135deg, rgba(0,230,118,0.1), transparent);
+    padding: 22px 24px 16px;
+    border-bottom: 1px solid var(--border);
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .domain-guide-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 22px; letter-spacing: 2px; color: var(--green);
+  }
+  .domain-guide-body { padding: 22px 24px; }
+  .dg-url-box {
+    background: var(--surface);
+    border: 1px solid rgba(0,230,118,.3);
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin-bottom: 20px;
+    display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  }
+  .dg-url-text {
+    flex: 1; font-size: 12px; color: var(--accent);
+    font-family: monospace; word-break: break-all;
+    min-width: 0;
+  }
+  .dg-copy-btn {
+    background: var(--green); color: #0a0e0a;
+    border: none; border-radius: 8px;
+    padding: 7px 14px; font-family: 'Bebas Neue', sans-serif;
+    font-size: 14px; letter-spacing: 1px; cursor: pointer;
+    white-space: nowrap; transition: opacity .2s;
+    flex-shrink: 0;
+  }
+  .dg-copy-btn:hover { opacity: .85; }
+  .dg-step {
+    display: flex; gap: 12px; align-items: flex-start;
+    margin-bottom: 16px; padding: 14px;
+    background: var(--surface); border-radius: 12px;
+    border: 1px solid var(--border);
+  }
+  .dg-step-num {
+    background: var(--green); color: #0a0e0a;
+    font-family: 'Bebas Neue', sans-serif; font-size: 16px;
+    width: 28px; height: 28px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0; letter-spacing: 0;
+  }
+  .dg-step-content { flex: 1; }
+  .dg-step-title { font-weight: 700; font-size: 14px; color: var(--text); margin-bottom: 4px; }
+  .dg-step-desc { font-size: 12px; color: var(--muted); line-height: 1.6; }
+  .dg-step-desc a { color: var(--green); }
+  .dg-platform-row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+  .dg-platform-chip {
+    background: rgba(0,230,118,.1); border: 1px solid rgba(0,230,118,.25);
+    color: var(--accent); padding: 3px 10px; border-radius: 10px;
+    font-size: 11px; font-weight: 700; letter-spacing: .5px;
+  }
+  .dg-share-btns { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; }
+  .dg-share-btn {
+    flex: 1; min-width: 120px;
+    display: flex; align-items: center; justify-content: center; gap: 6px;
+    padding: 10px 16px; border-radius: 10px;
+    font-size: 13px; font-weight: 700; cursor: pointer; border: none;
+    font-family: 'Rajdhani', sans-serif; letter-spacing: .5px;
+    transition: opacity .2s, transform .1s;
+  }
+  .dg-share-btn:hover { opacity: .85; transform: translateY(-1px); }
+
+  @media (max-width: 480px) {
+    .form-row { grid-template-columns: 1fr; }
+    .stat-item { min-width: 70px; padding: 10px 10px; }
+    .stat-num { font-size: 20px; }
+    header { padding: 10px 14px; }
+    .logo-text { font-size: 18px; }
+    .modal-body { padding: 16px 18px 22px; }
+    .modal-header { padding: 18px 18px 12px; }
+    .admin-tabs { gap: 2px; }
+    .admin-tab { font-size: 9px; padding: 7px 4px; }
+  }
+
+  /* ---- PWA INSTALL BANNER ---- */
+  .pwa-banner {
+    display: none;
+    position: fixed;
+    bottom: 72px;
+    left: 12px; right: 12px;
+    z-index: 200;
+    background: linear-gradient(135deg, #0d1f0d, #112211);
+    border: 1px solid rgba(0,230,118,0.5);
+    border-radius: 18px;
+    padding: 14px 18px;
+    box-shadow: 0 8px 32px rgba(0,230,118,0.2);
+    animation: slideUp .4s ease;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .pwa-banner.show { display: flex; align-items: center; gap: 12px; }
+  @keyframes slideUp {
+    from { opacity:0; transform:translateY(20px); }
+    to { opacity:1; transform:translateY(0); }
+  }
+  .pwa-banner-icon { font-size: 36px; flex-shrink: 0; }
+  .pwa-banner-text { flex: 1; }
+  .pwa-banner-title { font-family: 'Bebas Neue', sans-serif; font-size: 17px; letter-spacing: 1px; color: var(--green); margin-bottom: 2px; }
+  .pwa-banner-sub { font-size: 12px; color: var(--muted); }
+  .pwa-banner-btns { display: flex; flex-direction: column; gap: 6px; flex-shrink: 0; }
+  .pwa-install-btn {
+    background: linear-gradient(135deg, var(--green2), var(--green));
+    border: none; border-radius: 10px; padding: 8px 16px;
+    color: #0a0e0a; font-family: 'Bebas Neue', sans-serif;
+    font-size: 14px; letter-spacing: 1px; cursor: pointer;
+    white-space: nowrap; transition: opacity .2s;
+  }
+  .pwa-install-btn:hover { opacity: .85; }
+  .pwa-dismiss-btn {
+    background: none; border: 1px solid var(--border);
+    border-radius: 10px; padding: 6px 12px;
+    color: var(--muted); font-size: 12px; cursor: pointer;
+    font-family: 'Rajdhani', sans-serif; font-weight: 600;
+    text-align: center;
+  }
+  .pwa-dismiss-btn:hover { border-color: var(--muted); }
+
+  /* ---- APK / DOWNLOAD MODAL ---- */
+  .apk-modal {
+    position: fixed; inset: 0;
+    background: rgba(0,0,0,.92);
+    backdrop-filter: blur(12px);
+    z-index: 300;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+  }
+  .apk-modal.show { display: flex; }
+  .apk-box {
+    background: var(--card);
+    border: 1px solid rgba(0,230,118,.3);
+    border-radius: 22px;
+    width: 100%; max-width: 420px;
+    animation: modalIn .3s ease;
+    overflow: hidden;
+  }
+  .apk-header {
+    background: linear-gradient(135deg, rgba(0,230,118,0.12), rgba(0,200,83,0.06));
+    padding: 22px 24px 16px;
+    border-bottom: 1px solid var(--border);
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .apk-title { font-family: 'Bebas Neue', sans-serif; font-size: 24px; letter-spacing: 2px; color: var(--green); }
+  .apk-body { padding: 22px 24px; }
+  .apk-app-card {
+    display: flex; align-items: center; gap: 16px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px; padding: 16px;
+    margin-bottom: 20px;
+  }
+  .apk-app-icon {
+    width: 64px; height: 64px;
+    background: linear-gradient(135deg, #0a1a0a, #0d2a0d);
+    border-radius: 16px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 36px;
+    border: 1px solid rgba(0,230,118,.2);
+    flex-shrink: 0;
+  }
+  .apk-app-name { font-family: 'Bebas Neue', sans-serif; font-size: 20px; letter-spacing: 1px; color: var(--text); }
+  .apk-app-sub { font-size: 12px; color: var(--muted); margin-top: 3px; }
+  .apk-app-rating { font-size: 12px; color: var(--gold); margin-top: 4px; }
+  .apk-option {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px; padding: 16px 18px;
+    margin-bottom: 12px;
+    display: flex; align-items: center; gap: 14px;
+    cursor: pointer; transition: all .2s;
+  }
+  .apk-option:hover { border-color: rgba(0,230,118,.4); background: rgba(0,230,118,.04); }
+  .apk-option-icon { font-size: 32px; flex-shrink: 0; }
+  .apk-option-title { font-weight: 700; font-size: 15px; color: var(--text); margin-bottom: 3px; }
+  .apk-option-desc { font-size: 12px; color: var(--muted); line-height: 1.4; }
+  .apk-option-badge {
+    margin-left: auto; flex-shrink: 0;
+    background: rgba(0,230,118,.15);
+    border: 1px solid rgba(0,230,118,.3);
+    color: var(--green);
+    padding: 3px 10px; border-radius: 10px;
+    font-size: 10px; font-weight: 700; letter-spacing: .5px;
+  }
+  .apk-iphone-note {
+    background: rgba(33,150,243,.07);
+    border: 1px solid rgba(33,150,243,.2);
+    border-radius: 12px; padding: 14px;
+    font-size: 12px; color: #90caf9; line-height: 1.6;
+    margin-top: 4px;
+  }
+  .apk-steps {
+    display: flex; flex-direction: column; gap: 10px;
+    margin-top: 14px;
+  }
+  .apk-step {
+    display: flex; gap: 10px; align-items: flex-start;
+  }
+  .apk-step-num {
+    background: var(--green); color: #0a0e0a;
+    font-family: 'Bebas Neue', sans-serif; font-size: 13px;
+    width: 24px; height: 24px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .apk-step-text { font-size: 12px; color: var(--muted); line-height: 1.5; padding-top: 3px; }
+  .apk-step-text b { color: var(--text); }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-top">
+    <div class="logo">
+      <div class="logo-icon">M</div>
+      <div>
+        <div class="logo-text">Mohit Cricket Tips</div>
+        <div class="logo-sub">Expert Predictions</div>
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="live-badge"><div class="live-dot"></div>LIVE</div>
+      <button class="admin-btn" onclick="openAdminLogin()">Admin</button>
+    </div>
+  </div>
+  <div class="info-bar">
+    <div class="visitor-box">
+      <span class="visitor-icon">👥</span>
+      <span>Total Visitors:</span>
+      <span class="visitor-count" id="visitor-display">0</span>
+    </div>
+    <button class="cheater-btn" onclick="switchTab('cheaters')">
+      🚨 Total Cheaters
+      <span class="cheater-count-badge" id="cheater-count-badge">0</span>
+    </button>
+    <button class="share-site-btn" onclick="openShareSiteModal()">
+      <span class="share-site-icon">🔗</span> Site Share Karo
+    </button>
+    <button class="share-site-btn" onclick="openApkModal()" style="background:linear-gradient(135deg,rgba(255,214,0,0.15),rgba(255,152,0,0.1));border-color:rgba(255,214,0,0.4);color:var(--gold);">
+      <span>📲</span> App Download
+    </button>
+  </div>
+</header>
+
+<!-- STATS BAR -->
+<div class="stats-bar" id="stats-bar" style="position:relative;z-index:5;">
+  <div class="stat-item">
+    <div class="stat-num gold" id="stat-total">0</div>
+    <div class="stat-label">Total Tips</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num green" id="stat-win">0</div>
+    <div class="stat-label">Won ✅</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num red" id="stat-loss">0</div>
+    <div class="stat-label">Lost ❌</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-num green" id="stat-rate">0%</div>
+    <div class="stat-label">Win Rate</div>
+  </div>
+</div>
+
+<!-- PAGES -->
+
+<!-- HOME PAGE -->
+<div class="page active" id="page-home">
+  <main>
+    <div class="section-title">🏏 Latest Tips</div>
+    <div class="tips-grid" id="tips-container"></div>
+  </main>
+</div>
+
+<!-- VIDEO PAGE -->
+<div class="page" id="page-videos">
+  <main>
+    <div class="section-title">🎬 Videos</div>
+    <div class="video-grid" id="video-container"></div>
+  </main>
+</div>
+
+<!-- GIVEAWAY PAGE -->
+<div class="page" id="page-giveaway">
+  <main>
+    <div class="section-title">🎁 Giveaway</div>
+    <div class="giveaway-grid" id="giveaway-container"></div>
+  </main>
+</div>
+
+<!-- NEWS PAGE -->
+<div class="page" id="page-news">
+  <main>
+    <div class="section-title">📰 News</div>
+    <div class="news-grid" id="news-container"></div>
+  </main>
+</div>
+
+<!-- CHEATERS PAGE -->
+<div class="page" id="page-cheaters">
+  <main>
+    <div class="section-title">🚨 Cheaters List</div>
+    <div class="warning-banner">
+      <div class="warning-icon">⚠️</div>
+      <div class="warning-text">Yeh log fake tips dete hain aur paise loot lete hain. Inse saavdhan rahein! Kabhi bhi kisi ko tips ke liye paise mat dena.</div>
+    </div>
+    <div class="cheaters-grid" id="cheaters-container"></div>
+  </main>
+</div>
+
+<!-- BOTTOM NAV -->
+<nav class="bottom-nav">
+  <button class="nav-item active" id="nav-home" onclick="switchTab('home')">
+    <span class="nav-icon">🏠</span>Home
+  </button>
+  <button class="nav-item" id="nav-videos" onclick="switchTab('videos')">
+    <span class="nav-icon">🎬</span>Videos
+  </button>
+  <button class="nav-item" id="nav-giveaway" onclick="switchTab('giveaway')">
+    <span class="nav-icon">🎁</span>Giveaway
+  </button>
+  <button class="nav-item" id="nav-news" onclick="switchTab('news')">
+    <span class="nav-icon">📰</span>News
+  </button>
+  <button class="nav-item" id="nav-cheaters" onclick="switchTab('cheaters')">
+    <span class="nav-icon">🚨</span>Cheaters
+  </button>
+</nav>
+
+<!-- ADMIN FAB -->
+<button class="admin-fab" onclick="openAdminAddPanel()" title="Add Karo">+</button>
+<div class="admin-indicator" onclick="logoutAdmin()">✓ Admin Mode | Logout</div>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modal-overlay" onclick="closeOnOverlay(event)">
+  <div class="modal">
+    <div class="modal-header">
+      <div class="modal-title" id="modal-title">Admin Login</div>
+      <button class="close-btn" onclick="closeModal()">✕</button>
+    </div>
+    <div class="modal-body">
+
+      <!-- LOGIN AREA -->
+      <div id="login-area">
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" id="admin-pass" placeholder="Admin password daalo" onkeydown="if(event.key==='Enter')doLogin()">
+        </div>
+        <div class="error-msg" id="login-error">❌ Galat password!</div>
+        <button class="btn-primary" onclick="doLogin()">LOGIN</button>
+      </div>
+
+      <!-- ADMIN PANEL -->
+      <div id="admin-panel" style="display:none;">
+        <div class="admin-tabs">
+          <button class="admin-tab active" id="atab-tip" onclick="switchAdminTab('tip')">🏏 Tip</button>
+          <button class="admin-tab" id="atab-video" onclick="switchAdminTab('video')">🎬 Video</button>
+          <button class="admin-tab" id="atab-giveaway" onclick="switchAdminTab('giveaway')">🎁 Giveaway</button>
+          <button class="admin-tab" id="atab-news" onclick="switchAdminTab('news')">📰 News</button>
+          <button class="admin-tab" id="atab-cheater" onclick="switchAdminTab('cheater')">🚨 Cheater</button>
+          <button class="admin-tab" id="atab-settings" onclick="switchAdminTab('settings')">⚙️ Settings</button>
+        </div>
+
+        <!-- ADD TIP -->
+        <div id="admin-tip-form">
+          <div class="form-group">
+            <label>Match (Teams)</label>
+            <input type="text" id="f-match" placeholder="e.g. India vs Australia">
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Format</label>
+              <select id="f-format">
+                <option>T20</option><option>ODI</option><option>Test</option><option>IPL</option><option>WC</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Result</label>
+              <select id="f-result">
+                <option value="pending">Pending ⏳</option>
+                <option value="win">Won ✅</option>
+                <option value="loss">Lost ❌</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Prediction / Tip</label>
+            <input type="text" id="f-prediction" placeholder="e.g. India Jeetega, Toss Lena Important">
+          </div>
+          <div class="form-group">
+            <label>Analysis (Optional)</label>
+            <textarea id="f-analysis" placeholder="Apni expert analysis yahan likho..."></textarea>
+          </div>
+          <div class="form-group">
+            <label>Winning Screenshot (Optional)</label>
+            <div class="photo-upload-area">
+              <input type="file" id="f-photo" accept="image/*" onchange="previewPhoto(this,'photo-preview-img','photo-upload-icon-1','photo-upload-text-1','remove-photo-btn-1')">
+              <div class="photo-upload-icon" id="photo-upload-icon-1">📸</div>
+              <div class="photo-upload-text" id="photo-upload-text-1">Photo <span>Upload Karo</span></div>
+              <img class="photo-preview" id="photo-preview-img" alt="preview">
+            </div>
+            <button type="button" class="remove-photo" id="remove-photo-btn-1" onclick="removePhoto('f-photo','photo-preview-img','photo-upload-icon-1','photo-upload-text-1','remove-photo-btn-1')">✕ Photo Hatao</button>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Confidence: <span id="conf-val">75</span>%</label>
+              <input type="range" id="f-confidence" min="10" max="99" value="75"
+                oninput="document.getElementById('conf-val').textContent=this.value"
+                style="padding:8px 0;border:none;background:transparent;cursor:pointer;">
+            </div>
+            <div class="form-group">
+              <label>Match Date</label>
+              <input type="date" id="f-date">
+            </div>
+          </div>
+          <button class="btn-primary" onclick="saveTip()">TIP PUBLISH KARO 🏏</button>
+        </div>
+
+        <!-- ADD VIDEO -->
+        <div id="admin-video-form" style="display:none;">
+          <div class="form-group">
+            <label>Video Title</label>
+            <input type="text" id="fv-title" placeholder="e.g. IPL Match Analysis — MI vs CSK">
+          </div>
+          <div class="form-group">
+            <label>Description (Optional)</label>
+            <textarea id="fv-desc" placeholder="Video ke baare mein kuch likhna chahein to..."></textarea>
+          </div>
+          <div class="form-group">
+            <label>Video Upload Karo</label>
+            <div class="video-upload-area">
+              <input type="file" id="fv-file" accept="video/*" onchange="previewVideo(this)">
+              <div id="fv-icon">🎬</div>
+              <div style="font-size:13px;color:var(--muted);" id="fv-text">Video <span style="color:var(--blue);font-weight:700;">Select Karo</span></div>
+              <div id="fv-name" style="font-size:12px;color:var(--green);margin-top:6px;display:none;"></div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Thumbnail / Cover Image (Optional)</label>
+            <div class="photo-upload-area">
+              <input type="file" id="fv-thumb" accept="image/*" onchange="previewPhoto(this,'fv-thumb-preview','fv-thumb-icon','fv-thumb-text','fv-thumb-remove')">
+              <div class="photo-upload-icon" id="fv-thumb-icon">🖼️</div>
+              <div class="photo-upload-text" id="fv-thumb-text">Thumbnail <span>Upload Karo</span></div>
+              <img class="photo-preview" id="fv-thumb-preview" alt="thumb">
+            </div>
+            <button type="button" class="remove-photo" id="fv-thumb-remove" onclick="removePhoto('fv-thumb','fv-thumb-preview','fv-thumb-icon','fv-thumb-text','fv-thumb-remove')">✕ Thumbnail Hatao</button>
+          </div>
+          <div class="form-group">
+            <label>Date</label>
+            <input type="date" id="fv-date">
+          </div>
+          <button class="btn-blue" onclick="saveVideo()">VIDEO UPLOAD KARO 🎬</button>
+        </div>
+
+        <!-- ADD GIVEAWAY -->
+        <div id="admin-giveaway-form" style="display:none;">
+          <div class="form-group">
+            <label>Giveaway Title</label>
+            <input type="text" id="fg-title" placeholder="e.g. Mohit Cricket Tips Special Giveaway">
+          </div>
+          <div class="form-group">
+            <label>Prize / Reward</label>
+            <input type="text" id="fg-prize" placeholder="e.g. ₹500 Paytm Cash">
+          </div>
+          <div class="form-group">
+            <label>Details / Rules</label>
+            <textarea id="fg-desc" placeholder="Giveaway ke rules aur details likhein..."></textarea>
+          </div>
+          <div class="form-group">
+            <label>Giveaway Image (Optional)</label>
+            <div class="photo-upload-area">
+              <input type="file" id="fg-img" accept="image/*" onchange="previewPhoto(this,'fg-img-preview','fg-img-icon','fg-img-text','fg-img-remove')">
+              <div class="photo-upload-icon" id="fg-img-icon">🎁</div>
+              <div class="photo-upload-text" id="fg-img-text">Image <span>Upload Karo</span></div>
+              <img class="photo-preview" id="fg-img-preview" alt="giveaway">
+            </div>
+            <button type="button" class="remove-photo" id="fg-img-remove" onclick="removePhoto('fg-img','fg-img-preview','fg-img-icon','fg-img-text','fg-img-remove')">✕ Image Hatao</button>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Start Date</label>
+              <input type="date" id="fg-start">
+            </div>
+            <div class="form-group">
+              <label>End Date</label>
+              <input type="date" id="fg-end">
+            </div>
+          </div>
+          <button class="btn-gold" onclick="saveGiveaway()">GIVEAWAY POST KARO 🎁</button>
+        </div>
+
+        <!-- ADD NEWS -->
+        <div id="admin-news-form" style="display:none;">
+          <div class="form-group">
+            <label>News Headline</label>
+            <input type="text" id="fn-title" placeholder="e.g. Virat Kohli IPL 2025 Mein Return Karega!">
+          </div>
+          <div class="form-group">
+            <label>Category</label>
+            <select id="fn-tag">
+              <option value="Breaking">Breaking</option>
+              <option value="IPL">IPL</option>
+              <option value="Team India">Team India</option>
+              <option value="World Cup">World Cup</option>
+              <option value="Injury">Injury</option>
+              <option value="Transfer">Transfer</option>
+              <option value="General">General</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>News Content</label>
+            <textarea id="fn-body" placeholder="Puri news yahan likhein..." style="min-height:110px;"></textarea>
+          </div>
+          <div class="form-group">
+            <label>News Image (Optional)</label>
+            <div class="photo-upload-area">
+              <input type="file" id="fn-img" accept="image/*" onchange="previewPhoto(this,'fn-img-preview','fn-img-icon','fn-img-text','fn-img-remove')">
+              <div class="photo-upload-icon" id="fn-img-icon">📰</div>
+              <div class="photo-upload-text" id="fn-img-text">Image <span>Upload Karo</span></div>
+              <img class="photo-preview" id="fn-img-preview" alt="news">
+            </div>
+            <button type="button" class="remove-photo" id="fn-img-remove" onclick="removePhoto('fn-img','fn-img-preview','fn-img-icon','fn-img-text','fn-img-remove')">✕ Image Hatao</button>
+          </div>
+          <div class="form-group">
+            <label>Date</label>
+            <input type="date" id="fn-date">
+          </div>
+          <button class="btn-blue" onclick="saveNews()">NEWS PUBLISH KARO 📰</button>
+        </div>
+
+        <!-- ADD CHEATER -->
+        <div id="admin-cheater-form" style="display:none;">
+          <div class="form-group">
+            <label>Cheater Ka Naam / Username</label>
+            <input type="text" id="fc-name" placeholder="e.g. @FakeTips99">
+          </div>
+          <div class="form-group">
+            <label>Platform</label>
+            <select id="fc-platform">
+              <option value="Telegram">Telegram</option>
+              <option value="WhatsApp">WhatsApp</option>
+              <option value="Instagram">Instagram</option>
+              <option value="YouTube">YouTube</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Cheating Kaise Karta Hai</label>
+            <textarea id="fc-desc" placeholder="Is cheater ke baare mein details likhein..."></textarea>
+          </div>
+          <div class="form-group">
+            <label>Date Reported</label>
+            <input type="date" id="fc-date">
+          </div>
+          <button class="btn-danger" onclick="saveCheater()">CHEATER ADD KARO 🚨</button>
+        </div>
+
+        <!-- SETTINGS -->
+        <div id="admin-settings-form" style="display:none;">
+          <div class="form-group">
+            <label>🔢 Visitor Count Set Karo (Secret)</label>
+            <div class="visitor-edit-row">
+              <input type="number" id="visitor-input" placeholder="e.g. 10000" min="0">
+              <button onclick="saveVisitorCount()">Save</button>
+            </div>
+            <div style="display:flex;gap:8px;margin-top:10px;">
+              <button onclick="adjustVisitorCount(-1000)" style="flex:1;background:rgba(255,23,68,.15);border:1px solid rgba(255,23,68,.3);color:var(--red);border-radius:8px;padding:8px;font-family:'Bebas Neue',sans-serif;font-size:15px;letter-spacing:1px;cursor:pointer;">− 1000</button>
+              <button onclick="adjustVisitorCount(-100)" style="flex:1;background:rgba(255,23,68,.1);border:1px solid rgba(255,23,68,.2);color:var(--red);border-radius:8px;padding:8px;font-family:'Bebas Neue',sans-serif;font-size:15px;letter-spacing:1px;cursor:pointer;">− 100</button>
+              <button onclick="adjustVisitorCount(100)" style="flex:1;background:rgba(0,230,118,.1);border:1px solid rgba(0,230,118,.2);color:var(--green);border-radius:8px;padding:8px;font-family:'Bebas Neue',sans-serif;font-size:15px;letter-spacing:1px;cursor:pointer;">+ 100</button>
+              <button onclick="adjustVisitorCount(1000)" style="flex:1;background:rgba(0,230,118,.15);border:1px solid rgba(0,230,118,.3);color:var(--green);border-radius:8px;padding:8px;font-family:'Bebas Neue',sans-serif;font-size:15px;letter-spacing:1px;cursor:pointer;">+ 1000</button>
+            </div>
+          </div>
+          <div style="font-size:12px;color:var(--muted);margin-top:-8px;margin-bottom:20px;">
+            💡 Yeh count website pe header mein dikhega. Sirf admin change kar sakta hai. Visitors ko is feature ka pata nahi hoga.
+          </div>
+          <div class="form-group">
+            <label>Current Visitor Count</label>
+            <div style="font-family:'Bebas Neue',sans-serif;font-size:32px;color:var(--green);letter-spacing:2px;" id="settings-visitor-display">0</div>
+          </div>
+        </div>
+
+      </div><!-- /admin-panel -->
+    </div>
+  </div>
+</div>
+
+<div class="copied-toast" id="copied-toast">✅ Link Copy Ho Gaya!</div>
+
+<!-- PWA INSTALL BANNER -->
+<div class="pwa-banner" id="pwa-banner">
+  <div class="pwa-banner-icon">📲</div>
+  <div class="pwa-banner-text">
+    <div class="pwa-banner-title">MCT App Install Karo!</div>
+    <div class="pwa-banner-sub">Home screen pe shortcut add karo — bilkul free!</div>
+  </div>
+  <div class="pwa-banner-btns">
+    <button class="pwa-install-btn" onclick="triggerPwaInstall()">Install</button>
+    <button class="pwa-dismiss-btn" onclick="dismissPwaBanner()">Baad mein</button>
+  </div>
+</div>
+
+<!-- APK / DOWNLOAD MODAL -->
+<div class="apk-modal" id="apk-modal" onclick="if(event.target===this)closeApkModal()">
+  <div class="apk-box">
+    <div class="apk-header">
+      <div class="apk-title">📲 App Download Karo</div>
+      <button class="close-btn" onclick="closeApkModal()">✕</button>
+    </div>
+    <div class="apk-body">
+      <div class="apk-app-card">
+        <div class="apk-app-icon">🏏</div>
+        <div>
+          <div class="apk-app-name">Mohit Cricket Tips</div>
+          <div class="apk-app-sub">Expert Predictions & Free Tips</div>
+          <div class="apk-app-rating">⭐⭐⭐⭐⭐ Free App</div>
+        </div>
+      </div>
+
+      <!-- Android Option -->
+      <div class="apk-option" onclick="installAndroid()">
+        <div class="apk-option-icon">🤖</div>
+        <div>
+          <div class="apk-option-title">Android Phone</div>
+          <div class="apk-option-desc">Chrome browser mein open karo → Menu (⋮) → "Add to Home Screen" tap karo. App icon aa jaayega!</div>
+        </div>
+        <div class="apk-option-badge">FREE</div>
+      </div>
+
+      <!-- iPhone Option -->
+      <div class="apk-option" id="iphone-option" onclick="document.getElementById('iphone-steps').style.display=document.getElementById('iphone-steps').style.display==='none'?'block':'none'">
+        <div class="apk-option-icon">🍎</div>
+        <div>
+          <div class="apk-option-title">iPhone / iPad</div>
+          <div class="apk-option-desc">Safari mein open karo → Share button → "Add to Home Screen" tap karo.</div>
+        </div>
+        <div class="apk-option-badge">FREE</div>
+      </div>
+
+      <div id="iphone-steps" style="display:none;" class="apk-iphone-note">
+        <b style="color:var(--blue);">iPhone pe kaise install karein:</b>
+        <div class="apk-steps">
+          <div class="apk-step"><div class="apk-step-num">1</div><div class="apk-step-text"><b>Safari browser</b> mein ye link open karo</div></div>
+          <div class="apk-step"><div class="apk-step-num">2</div><div class="apk-step-text">Neeche <b>Share button (📤)</b> press karo</div></div>
+          <div class="apk-step"><div class="apk-step-num">3</div><div class="apk-step-text"><b>"Add to Home Screen"</b> pe tap karo</div></div>
+          <div class="apk-step"><div class="apk-step-num">4</div><div class="apk-step-text"><b>Add</b> press karo — App install ho jaayega! 🎉</div></div>
+        </div>
+        <div style="margin-top:10px;padding:10px;background:rgba(255,214,0,.07);border-radius:8px;border:1px solid rgba(255,214,0,.2);">
+          <b style="color:var(--gold);">💡 Link:</b> <span id="apk-current-url" style="color:var(--accent);font-size:11px;font-family:monospace;word-break:break-all;"></span>
+          <button onclick="copyApkLink()" style="display:block;margin-top:8px;background:var(--gold);color:#0a0e0a;border:none;border-radius:8px;padding:6px 14px;font-family:'Bebas Neue',sans-serif;font-size:13px;letter-spacing:1px;cursor:pointer;width:100%;">📋 Link Copy Karo</button>
+        </div>
+      </div>
+
+      <div style="margin-top:16px;padding:12px 14px;background:rgba(0,230,118,.05);border:1px solid rgba(0,230,118,.15);border-radius:12px;font-size:12px;color:var(--muted);line-height:1.6;">
+        ✅ <b style="color:var(--green);">100% Free</b> — Koi charge nahi<br>
+        ✅ <b style="color:var(--green);">Offline bhi kaam karta hai</b> — Without internet<br>
+        ✅ <b style="color:var(--green);">Auto Update</b> — Hamesha latest version<br>
+        ✅ <b style="color:var(--green);">Android & iPhone</b> dono ke liye
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- DOMAIN GUIDE / SHARE SITE MODAL -->
+<div class="domain-guide-modal" id="domain-guide-modal" onclick="if(event.target===this)closeDomainGuide()">
+  <div class="domain-guide-box">
+    <div class="domain-guide-header">
+      <div class="domain-guide-title">🔗 Site Share Karo</div>
+      <button class="close-btn" onclick="closeDomainGuide()">✕</button>
+    </div>
+    <div class="domain-guide-body">
+
+      <!-- Current URL Box -->
+      <div style="font-size:11px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;margin-bottom:8px;font-weight:700;">📌 Is Site Ki Current Link</div>
+      <div class="dg-url-box">
+        <div class="dg-url-text" id="dg-current-url">Loading...</div>
+        <button class="dg-copy-btn" onclick="copyAndShareSiteUrl()">📋 Copy</button>
+      </div>
+
+      <!-- Direct Share Buttons -->
+      <div style="font-size:11px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;margin-bottom:10px;font-weight:700;">⚡ Seedha Share Karo</div>
+      <div class="dg-share-btns" style="margin-bottom:24px;">
+        <button class="dg-share-btn" style="background:#25D366;color:#fff;" onclick="shareSiteToWhatsApp()">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+          WhatsApp
+        </button>
+        <button class="dg-share-btn" style="background:#229ED9;color:#fff;" onclick="shareSiteToTelegram()">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+          Telegram
+        </button>
+      </div>
+
+      <!-- Domain Kaise Lagayen -->
+      <div style="font-size:11px;color:var(--muted);letter-spacing:2px;text-transform:uppercase;margin-bottom:14px;font-weight:700;">🌐 Permanent Domain Kaise Banayein?</div>
+
+      <div class="dg-step">
+        <div class="dg-step-num">1</div>
+        <div class="dg-step-content">
+          <div class="dg-step-title">GitHub Par File Upload Karo (Free)</div>
+          <div class="dg-step-desc">
+            github.com pe jaao → New Repository banao → Is HTML file ko upload karo → Settings → Pages → Branch: main select karo.<br>
+            ✅ Free link milegi: <span style="color:var(--green);">yourname.github.io/mohit-cricket-tips</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="dg-step">
+        <div class="dg-step-num">2</div>
+        <div class="dg-step-content">
+          <div class="dg-step-title">Netlify Se Deploy Karo (Sabse Easy)</div>
+          <div class="dg-step-desc">
+            <strong style="color:var(--accent);">netlify.com</strong> par jaao → "Deploy manually" → Is file ko drag & drop karo → Turant live link milegi!<br>
+            ✅ Free link: <span style="color:var(--green);">random-name.netlify.app</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="dg-step">
+        <div class="dg-step-num">3</div>
+        <div class="dg-step-content">
+          <div class="dg-step-title">Custom Domain Lagao (Paid - ₹500-1000/year)</div>
+          <div class="dg-step-desc">
+            GoDaddy ya Namecheap se domain kharido (e.g. <span style="color:var(--green);">mohitcrickettips.com</span>) → Netlify ya GitHub Pages me connect karo → www.mohitcrickettips.com ready!
+            <div class="dg-platform-row">
+              <span class="dg-platform-chip">GoDaddy.com</span>
+              <span class="dg-platform-chip">Namecheap.com</span>
+              <span class="dg-platform-chip">Bigrock.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dg-step">
+        <div class="dg-step-num">4</div>
+        <div class="dg-step-content">
+          <div class="dg-step-title">File Share Karo + Link Send Karo</div>
+          <div class="dg-step-desc">
+            Jab bhi aap koi tip/video/giveaway add karo, upar "Site Share Karo" button dabao aur WhatsApp/Telegram group mein link bhejo. Jo bhi click karega, seedha live tips dekhega! ✅
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script>
+// =============================================
+// CONFIG
+// =============================================
+const ADMIN_PASS_HASH = 'e37513289270576d8d6fbbd4854823391f5f138c3a4b7a6965d7077092f25856';
+// Password: Mohit@Cricket2025
+
+async function hashPassword(p) {
+  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(p));
+  return [...new Uint8Array(buf)].map(x=>x.toString(16).padStart(2,'0')).join('');
+}
+
+// =============================================
+// STATE
+// =============================================
+let tips = [], videos = [], giveaways = [], news = [], cheaters = [];
+let isAdmin = false;
+let currentPhotoData = {};
+let currentVideoData = null;
+let currentAdminTab = 'tip';
+let currentPage = 'home';
+
+// =============================================
+// STORAGE
+// =============================================
+function load(key, fallback) {
+  try { const r = localStorage.getItem(key); return r ? JSON.parse(r) : fallback; }
+  catch(e) { return fallback; }
+}
+function save(key, data) {
+  try { localStorage.setItem(key, JSON.stringify(data)); } catch(e) {}
+}
+
+function loadAll() {
+  tips = load('mct_tips_v2', getSampleTips());
+  if (!localStorage.getItem('mct_tips_v2')) save('mct_tips_v2', tips);
+  videos = load('mct_videos_v1', []);
+  giveaways = load('mct_giveaways_v1', []);
+  news = load('mct_news_v1', []);
+  cheaters = load('mct_cheaters_v1', []);
+}
+
+// =============================================
+// VISITOR COUNTER
+// =============================================
+function loadVisitorCount() {
+  let count = parseInt(localStorage.getItem('mct_visitors') || '0');
+  // Auto-increment on page load (simulate new visitor)
+  const lastVisit = localStorage.getItem('mct_last_visit');
+  const now = Date.now();
+  // Only increment if no visit in last 30 min (same user returning = same session)
+  if (!lastVisit || (now - parseInt(lastVisit)) > 1800000) {
+    count += Math.floor(Math.random() * 3) + 1; // +1 to +3 realistic increment
+    localStorage.setItem('mct_visitors', count);
+    localStorage.setItem('mct_last_visit', now);
+  }
+  return count;
+}
+
+function displayVisitorCount() {
+  const count = parseInt(localStorage.getItem('mct_visitors') || '0');
+  const el = document.getElementById('visitor-display');
+  if (el) el.textContent = formatNumber(count);
+  const settingsEl = document.getElementById('settings-visitor-display');
+  if (settingsEl) settingsEl.textContent = formatNumber(count);
+}
+
+function saveVisitorCount() {
+  const val = parseInt(document.getElementById('visitor-input').value);
+  if (isNaN(val) || val < 0) { alert('Sahi number daalo!'); return; }
+  localStorage.setItem('mct_visitors', val);
+  displayVisitorCount();
+  showToast('✅ Visitor Count Update Ho Gaya!');
+}
+
+function adjustVisitorCount(delta) {
+  let count = parseInt(localStorage.getItem('mct_visitors') || '0');
+  count = Math.max(0, count + delta);
+  localStorage.setItem('mct_visitors', count);
+  const vi = document.getElementById('visitor-input');
+  if (vi) vi.value = count;
+  displayVisitorCount();
+  showToast('✅ Count: ' + formatNumber(count));
+}
+
+function formatNumber(n) {
+  if (n >= 1000000) return (n/1000000).toFixed(1)+'M';
+  if (n >= 1000) return (n/1000).toFixed(1)+'K';
+  return n.toString();
+}
+
+// =============================================
+// NAVIGATION
+// =============================================
+function switchTab(tab) {
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.nav-item').forEach(n=>n.classList.remove('active'));
+  document.getElementById('page-'+tab).classList.add('active');
+  document.getElementById('nav-'+tab).classList.add('active');
+  currentPage = tab;
+  // Only show stats bar on home
+  document.getElementById('stats-bar').style.display = (tab==='home') ? 'flex' : 'none';
+  renderPage(tab);
+}
+
+function renderPage(tab) {
+  if (tab==='home') renderTips();
+  else if (tab==='videos') renderVideos();
+  else if (tab==='giveaway') renderGiveaways();
+  else if (tab==='news') renderNews();
+  else if (tab==='cheaters') renderCheaters();
+}
+
+// =============================================
+// ADMIN
+// =============================================
+function openAdminLogin() {
+  if (isAdmin) { openAdminAddPanel(); return; }
+  document.getElementById('modal-title').textContent = 'Admin Login';
+  document.getElementById('login-area').style.display = 'block';
+  document.getElementById('admin-panel').style.display = 'none';
+  document.getElementById('admin-pass').value = '';
+  document.getElementById('login-error').style.display = 'none';
+  document.getElementById('modal-overlay').classList.add('show');
+  setTimeout(()=>document.getElementById('admin-pass').focus(), 200);
+}
+
+async function doLogin() {
+  const pass = document.getElementById('admin-pass').value;
+  const hash = await hashPassword(pass);
+  if (hash === ADMIN_PASS_HASH) {
+    isAdmin = true;
+    document.body.classList.add('admin-mode');
+    closeModal();
+  } else {
+    document.getElementById('login-error').style.display = 'block';
+    document.getElementById('admin-pass').value = '';
+    document.getElementById('admin-pass').focus();
+  }
+}
+
+function logoutAdmin() {
+  isAdmin = false;
+  document.body.classList.remove('admin-mode');
+  renderPage(currentPage);
+}
+
+function openAdminAddPanel() {
+  document.getElementById('modal-title').textContent = '+ Admin Panel';
+  document.getElementById('login-area').style.display = 'none';
+  document.getElementById('admin-panel').style.display = 'block';
+  // Set today's date on all date fields
+  const today = new Date().toISOString().split('T')[0];
+  ['f-date','fv-date','fn-date','fc-date','fg-start','fg-end'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el && !el.value) el.value = today;
+  });
+  // Sync visitor count to settings tab
+  const vi = document.getElementById('visitor-input');
+  if (vi) vi.value = localStorage.getItem('mct_visitors') || '0';
+  displayVisitorCount();
+  document.getElementById('modal-overlay').classList.add('show');
+}
+
+function switchAdminTab(tab) {
+  currentAdminTab = tab;
+  ['tip','video','giveaway','news','cheater','settings'].forEach(t => {
+    document.getElementById('atab-'+t).classList.toggle('active', t===tab);
+    document.getElementById('admin-'+t+'-form').style.display = t===tab ? 'block' : 'none';
+  });
+}
+
+// =============================================
+// TIPS
+// =============================================
+function getSampleTips() {
+  return [
+    { id: Date.now()-200000, match:"India vs Australia", format:"T20", prediction:"India Jeetega - Top Order Strong Hai", analysis:"India ka batting lineup bahut strong hai aur Australia ke fast bowlers ko India ke pitch pe mushkil hogi. Rohit aur Virat ka form bhi accha chal raha hai.", confidence:82, result:"win", date:"2025-05-10", photo:null },
+    { id: Date.now()-100000, match:"MI vs CSK", format:"IPL", prediction:"CSK Jeetega - Wankhede Pe Dhoni Ka Jaadu", analysis:"Dhoni ka experience aur CSK ki bowling lineup bahut dangerous hai. Wankhede ka pitch batting friendly hai lekin CSK ke spinners yahan kaafi effective rehe hain.", confidence:70, result:"pending", date:"2025-05-12", photo:null }
+  ];
+}
+
+function renderTips() {
+  const container = document.getElementById('tips-container');
+  const sorted = [...tips].sort((a,b)=>b.id-a.id);
+  if (!sorted.length) { container.innerHTML = emptyState('🏏','Koi Tip Nahi Hai Abhi','Admin panel se apni pehli cricket prediction share karo!'); return; }
+  container.innerHTML = sorted.map((tip,i)=>`
+    <div class="tip-card ${tip.result}" style="animation-delay:${i*.07}s" id="tip-${tip.id}">
+      <div class="tip-header">
+        <div>
+          <div class="match-title">${esc(tip.match)}</div>
+          <div style="font-size:11px;color:var(--muted);margin-top:3px">${formatDate(tip.date)}</div>
+        </div>
+        <div class="match-meta">
+          <span class="badge badge-format">${esc(tip.format)}</span>
+          <span class="badge badge-${tip.result}">${resultLabel(tip.result)}</span>
+          <button class="delete-btn" onclick="deleteTip(${tip.id})">🗑</button>
+        </div>
+      </div>
+      ${tip.photo?`<img class="tip-image" src="${tip.photo}" alt="Screenshot" onclick="openImageFull(this.src)">`:''}
+      <div class="tip-prediction">
+        <span class="pred-icon">🎯</span>
+        <div>
+          <div class="pred-label">Prediction</div>
+          <div class="pred-value">${esc(tip.prediction)}</div>
+        </div>
+      </div>
+      ${tip.analysis?`<div class="tip-analysis">${esc(tip.analysis)}</div>`:''}
+      <div class="tip-footer">
+        <span>📅 ${formatDate(tip.date)}</span>
+        <div class="confidence-bar">
+          <span class="conf-label" style="font-size:11px;color:var(--muted);">Confidence</span>
+          <div class="conf-track"><div class="conf-fill" style="width:${tip.confidence}%"></div></div>
+          <span class="conf-label" style="font-size:11px;color:var(--muted);">${tip.confidence}%</span>
+        </div>
+      </div>
+      <div class="share-row">
+        <span class="share-label">🔗 Share:</span>
+        <button class="share-btn share-wa" onclick="shareTip(${tip.id},'whatsapp')"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>WhatsApp</button>
+        <button class="share-btn share-tg" onclick="shareTip(${tip.id},'telegram')"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>Telegram</button>
+        <button class="share-btn share-copy" onclick="shareTip(${tip.id},'copy')">📋 Copy</button>
+      </div>
+    </div>
+  `).join('');
+  updateStats();
+}
+
+function updateStats() {
+  const win = tips.filter(t=>t.result==='win').length;
+  const loss = tips.filter(t=>t.result==='loss').length;
+  const total = tips.length;
+  const rate = (win+loss)>0 ? Math.round((win/(win+loss))*100) : 0;
+  document.getElementById('stat-total').textContent = total;
+  document.getElementById('stat-win').textContent = win;
+  document.getElementById('stat-loss').textContent = loss;
+  document.getElementById('stat-rate').textContent = rate+'%';
+}
+
+function saveTip() {
+  const match = document.getElementById('f-match').value.trim();
+  const prediction = document.getElementById('f-prediction').value.trim();
+  if (!match||!prediction) { alert('Match aur Prediction zaroori hain!'); return; }
+  tips.unshift({
+    id: Date.now(), match, format: document.getElementById('f-format').value,
+    prediction, analysis: document.getElementById('f-analysis').value.trim(),
+    confidence: parseInt(document.getElementById('f-confidence').value),
+    result: document.getElementById('f-result').value,
+    date: document.getElementById('f-date').value,
+    photo: currentPhotoData['tip'] || null
+  });
+  save('mct_tips_v2', tips);
+  closeModal();
+  switchTab('home');
+  // reset
+  document.getElementById('f-match').value='';
+  document.getElementById('f-prediction').value='';
+  document.getElementById('f-analysis').value='';
+  document.getElementById('f-confidence').value=75;
+  document.getElementById('conf-val').textContent='75';
+  document.getElementById('f-result').value='pending';
+  removePhoto('f-photo','photo-preview-img','photo-upload-icon-1','photo-upload-text-1','remove-photo-btn-1');
+}
+
+function deleteTip(id) {
+  if (!confirm('Yeh tip delete karna chahte ho?')) return;
+  tips = tips.filter(t=>t.id!==id);
+  save('mct_tips_v2', tips);
+  renderTips();
+}
+
+// =============================================
+// VIDEOS
+// =============================================
+function renderVideos() {
+  const c = document.getElementById('video-container');
+  if (!videos.length) { c.innerHTML = emptyState('🎬','Koi Video Nahi Hai','Admin panel se video upload karo!'); return; }
+  c.innerHTML = [...videos].sort((a,b)=>b.id-a.id).map((v,i)=>`
+    <div class="video-card" style="animation-delay:${i*.07}s">
+      <div class="video-thumb" onclick="playVideo(${v.id})">
+        ${v.thumb ? `<img src="${v.thumb}" alt="${esc(v.title)}">` : `<div style="height:160px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#0d1a0d,#112011);"><span style="font-size:48px;">🎬</span></div>`}
+        <div class="video-play-overlay"><div class="play-btn-circle">▶</div></div>
+      </div>
+      ${v.file ? `<video id="vid-${v.id}" src="${v.file}" controls style="width:100%;display:none;max-height:260px;background:#000;"></video>` : ''}
+      <div class="video-info">
+        <div class="video-title">${esc(v.title)}</div>
+        ${v.desc?`<div class="video-desc">${esc(v.desc)}</div>`:''}
+        <div class="video-date" style="display:flex;justify-content:space-between;align-items:center;">
+          <span>📅 ${formatDate(v.date)}</span>
+          <button class="delete-btn" style="display:${isAdmin?'inline-flex':'none'}" onclick="deleteVideo(${v.id})">🗑</button>
+        </div>
+      </div>
+    </div>
+  `).join('');
+}
+
+function playVideo(id) {
+  const v = videos.find(x=>x.id===id);
+  if (!v || !v.file) return;
+  const vid = document.getElementById('vid-'+id);
+  const overlay = vid.previousElementSibling;
+  if (vid.style.display==='none') {
+    vid.style.display='block';
+    if(overlay) overlay.style.display='none';
+    vid.play();
+  }
+}
+
+function previewVideo(input) {
+  const file = input.files[0];
+  if (!file) return;
+  const nameEl = document.getElementById('fv-name');
+  nameEl.textContent = '✅ ' + file.name;
+  nameEl.style.display = 'block';
+  const reader = new FileReader();
+  reader.onload = e => { currentVideoData = e.target.result; };
+  reader.readAsDataURL(file);
+}
+
+function saveVideo() {
+  const title = document.getElementById('fv-title').value.trim();
+  if (!title) { alert('Title daalo!'); return; }
+  videos.unshift({
+    id: Date.now(), title,
+    desc: document.getElementById('fv-desc').value.trim(),
+    file: currentVideoData || null,
+    thumb: currentPhotoData['fv-thumb-preview'] || null,
+    date: document.getElementById('fv-date').value
+  });
+  save('mct_videos_v1', videos);
+  closeModal();
+  switchTab('videos');
+  document.getElementById('fv-title').value='';
+  document.getElementById('fv-desc').value='';
+  document.getElementById('fv-name').style.display='none';
+  currentVideoData = null;
+  removePhoto('fv-thumb','fv-thumb-preview','fv-thumb-icon','fv-thumb-text','fv-thumb-remove');
+}
+
+function deleteVideo(id) {
+  if (!confirm('Delete karna chahte ho?')) return;
+  videos = videos.filter(v=>v.id!==id);
+  save('mct_videos_v1', videos);
+  renderVideos();
+}
+
+// =============================================
+// GIVEAWAYS
+// =============================================
+function renderGiveaways() {
+  const c = document.getElementById('giveaway-container');
+  if (!giveaways.length) { c.innerHTML = emptyState('🎁','Koi Giveaway Nahi Hai','Admin panel se giveaway post karo!'); return; }
+  c.innerHTML = [...giveaways].sort((a,b)=>b.id-a.id).map((g,i)=>`
+    <div class="giveaway-card" style="animation-delay:${i*.07}s">
+      <div class="giveaway-header">
+        <div class="giveaway-title">🎁 ${esc(g.title)}</div>
+        <div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap;">
+          <span class="giveaway-badge">GIVEAWAY</span>
+          <button class="delete-btn" style="display:${isAdmin?'inline-flex':'none'}" onclick="deleteGiveaway(${g.id})">🗑</button>
+        </div>
+      </div>
+      ${g.img?`<img class="giveaway-img" src="${g.img}" alt="giveaway">`:''}
+      <div class="giveaway-prize">
+        <div class="giveaway-prize-label">🏆 Prize / Reward</div>
+        ${esc(g.prize)}
+      </div>
+      ${g.desc?`<div class="giveaway-desc">${esc(g.desc)}</div>`:''}
+      <div class="giveaway-footer">
+        <span class="giveaway-date">📅 Start: ${formatDate(g.start)}</span>
+        ${g.end?`<span class="giveaway-date">🏁 End: ${formatDate(g.end)}</span>`:''}
+      </div>
+    </div>
+  `).join('');
+}
+
+function saveGiveaway() {
+  const title = document.getElementById('fg-title').value.trim();
+  const prize = document.getElementById('fg-prize').value.trim();
+  if (!title||!prize) { alert('Title aur Prize zaroori hain!'); return; }
+  giveaways.unshift({
+    id: Date.now(), title, prize,
+    desc: document.getElementById('fg-desc').value.trim(),
+    img: currentPhotoData['fg-img-preview'] || null,
+    start: document.getElementById('fg-start').value,
+    end: document.getElementById('fg-end').value
+  });
+  save('mct_giveaways_v1', giveaways);
+  closeModal();
+  switchTab('giveaway');
+  document.getElementById('fg-title').value='';
+  document.getElementById('fg-prize').value='';
+  document.getElementById('fg-desc').value='';
+  removePhoto('fg-img','fg-img-preview','fg-img-icon','fg-img-text','fg-img-remove');
+}
+
+function deleteGiveaway(id) {
+  if (!confirm('Delete karna chahte ho?')) return;
+  giveaways = giveaways.filter(g=>g.id!==id);
+  save('mct_giveaways_v1', giveaways);
+  renderGiveaways();
+}
+
+// =============================================
+// NEWS
+// =============================================
+function renderNews() {
+  const c = document.getElementById('news-container');
+  if (!news.length) { c.innerHTML = emptyState('📰','Koi News Nahi Hai','Admin panel se news publish karo!'); return; }
+  c.innerHTML = [...news].sort((a,b)=>b.id-a.id).map((n,i)=>`
+    <div class="news-card" style="animation-delay:${i*.07}s">
+      <div class="news-header">
+        <div class="news-title">${esc(n.title)}</div>
+        <div style="display:flex;gap:6px;align-items:center;">
+          <span class="news-tag">${esc(n.tag)}</span>
+          <button class="delete-btn" style="display:${isAdmin?'inline-flex':'none'}" onclick="deleteNews(${n.id})">🗑</button>
+        </div>
+      </div>
+      ${n.img?`<img class="news-img" src="${n.img}" alt="news">`:''}
+      <div class="news-body">${esc(n.body)}</div>
+      <div class="news-footer">
+        <span>📅 ${formatDate(n.date)}</span>
+        <span style="background:rgba(33,150,243,.1);border:1px solid rgba(33,150,243,.2);padding:2px 8px;border-radius:10px;font-size:10px;color:var(--blue);">CRICKET NEWS</span>
+      </div>
+    </div>
+  `).join('');
+}
+
+function saveNews() {
+  const title = document.getElementById('fn-title').value.trim();
+  const body = document.getElementById('fn-body').value.trim();
+  if (!title||!body) { alert('Headline aur Content zaroori hain!'); return; }
+  news.unshift({
+    id: Date.now(), title, body,
+    tag: document.getElementById('fn-tag').value,
+    img: currentPhotoData['fn-img-preview'] || null,
+    date: document.getElementById('fn-date').value
+  });
+  save('mct_news_v1', news);
+  closeModal();
+  switchTab('news');
+  document.getElementById('fn-title').value='';
+  document.getElementById('fn-body').value='';
+  removePhoto('fn-img','fn-img-preview','fn-img-icon','fn-img-text','fn-img-remove');
+}
+
+function deleteNews(id) {
+  if (!confirm('Delete karna chahte ho?')) return;
+  news = news.filter(n=>n.id!==id);
+  save('mct_news_v1', news);
+  renderNews();
+}
+
+// =============================================
+// CHEATERS
+// =============================================
+function renderCheaters() {
+  const c = document.getElementById('cheaters-container');
+  // Update badge
+  document.getElementById('cheater-count-badge').textContent = cheaters.length;
+  if (!cheaters.length) { c.innerHTML = emptyState('✅','Koi Cheater Report Nahi Hai','Agar koi cheater mile to Admin panel se report karo!'); return; }
+  c.innerHTML = [...cheaters].sort((a,b)=>b.id-a.id).map((x,i)=>`
+    <div class="cheater-card" style="animation-delay:${i*.07}s">
+      <div class="cheater-header">
+        <div class="cheater-name">🚨 ${esc(x.name)}</div>
+        <div style="display:flex;gap:6px;align-items:center;">
+          <span class="cheater-platform">${esc(x.platform)}</span>
+          <button class="delete-btn" style="display:${isAdmin?'inline-flex':'none'}" onclick="deleteCheater(${x.id})">🗑</button>
+        </div>
+      </div>
+      <div class="cheater-desc">${esc(x.desc)}</div>
+      <div class="cheater-footer">⚠️ Reported: ${formatDate(x.date)}</div>
+    </div>
+  `).join('');
+}
+
+function saveCheater() {
+  const name = document.getElementById('fc-name').value.trim();
+  const desc = document.getElementById('fc-desc').value.trim();
+  if (!name||!desc) { alert('Naam aur Description zaroori hain!'); return; }
+  cheaters.unshift({
+    id: Date.now(), name,
+    platform: document.getElementById('fc-platform').value,
+    desc, date: document.getElementById('fc-date').value
+  });
+  save('mct_cheaters_v1', cheaters);
+  closeModal();
+  switchTab('cheaters');
+  document.getElementById('fc-name').value='';
+  document.getElementById('fc-desc').value='';
+}
+
+function deleteCheater(id) {
+  if (!confirm('Delete karna chahte ho?')) return;
+  cheaters = cheaters.filter(x=>x.id!==id);
+  save('mct_cheaters_v1', cheaters);
+  renderCheaters();
+}
+
+// =============================================
+// PHOTO HELPERS
+// =============================================
+function previewPhoto(input, previewId, iconId, textId, removeBtnId) {
+  const file = input.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = e => {
+    currentPhotoData[previewId] = e.target.result;
+    const img = document.getElementById(previewId);
+    img.src = e.target.result;
+    img.classList.add('show');
+    document.getElementById(removeBtnId).classList.add('show');
+    const icon = document.getElementById(iconId);
+    const text = document.getElementById(textId);
+    if(icon) icon.style.display='none';
+    if(text) text.style.display='none';
+  };
+  reader.readAsDataURL(file);
+}
+
+function removePhoto(inputId, previewId, iconId, textId, removeBtnId) {
+  currentPhotoData[previewId] = null;
+  const input = document.getElementById(inputId);
+  if(input) input.value='';
+  const img = document.getElementById(previewId);
+  if(img){img.src='';img.classList.remove('show');}
+  const rb = document.getElementById(removeBtnId);
+  if(rb) rb.classList.remove('show');
+  const icon = document.getElementById(iconId);
+  const text = document.getElementById(textId);
+  if(icon) icon.style.display='';
+  if(text) text.style.display='';
+}
+
+function openImageFull(src) {
+  const ov = document.createElement('div');
+  ov.style.cssText='position:fixed;inset:0;background:rgba(0,0,0,.93);z-index:999;display:flex;align-items:center;justify-content:center;cursor:zoom-out;padding:20px;';
+  const img = document.createElement('img');
+  img.src=src; img.style.cssText='max-width:100%;max-height:90vh;border-radius:12px;object-fit:contain;';
+  ov.appendChild(img); ov.onclick=()=>document.body.removeChild(ov);
+  document.body.appendChild(ov);
+}
+
+// =============================================
+// SHARE
+// =============================================
+function getSiteUrl() { return window.location.origin + window.location.pathname; }
+
+function shareTip(id, platform) {
+  const tip = tips.find(t=>t.id===id);
+  if (!tip) return;
+  const url = getSiteUrl().split('#')[0];
+  const resultEmoji = tip.result==='win'?'✅ WIN':tip.result==='loss'?'❌ LOSS':'⏳ PENDING';
+  const text = `🏏 *Mohit Cricket Tips*\n\n📌 Match: ${tip.match} (${tip.format})\n🗓️ Date: ${formatDate(tip.date)}\n🎯 Prediction: ${tip.prediction}\n💪 Confidence: ${tip.confidence}%\n${tip.analysis?`📊 Analysis: ${tip.analysis}\n`:''}\n🏆 Result: ${resultEmoji}\n\n🔗 Aur tips dekho: ${url}`;
+  if (platform==='whatsapp') window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank');
+  else if (platform==='telegram') window.open(`https://t.me/share/url?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}`, '_blank');
+  else if (platform==='copy') {
+    const copy = s => { if(navigator.clipboard) navigator.clipboard.writeText(s).then(showToast).catch(()=>fallbackCopy(s)); else fallbackCopy(s); };
+    copy(url);
+  }
+}
+
+function fallbackCopy(text) {
+  const ta = document.createElement('textarea');
+  ta.value=text; ta.style.cssText='position:fixed;opacity:0;top:0;left:0;';
+  document.body.appendChild(ta); ta.focus(); ta.select();
+  try{document.execCommand('copy');}catch(e){}
+  document.body.removeChild(ta); showToast();
+}
+
+function showToast(msg) {
+  const t = document.getElementById('copied-toast');
+  if(msg) t.textContent=msg;
+  t.classList.add('show');
+  setTimeout(()=>{t.classList.remove('show');if(msg)t.textContent='✅ Link Copy Ho Gaya!';}, 2500);
+}
+
+// =============================================
+// MODAL
+// =============================================
+function closeModal() { document.getElementById('modal-overlay').classList.remove('show'); }
+function closeOnOverlay(e) { if(e.target===document.getElementById('modal-overlay')) closeModal(); }
+
+// =============================================
+// HELPERS
+// =============================================
+function esc(s) { return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function resultLabel(r) { return r==='win'?'✅ WON':r==='loss'?'❌ LOST':'⏳ PENDING'; }
+function formatDate(d) {
+  if (!d) return '';
+  const p=d.split('-'); if(p.length!==3) return d;
+  const m=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  return `${p[2]} ${m[parseInt(p[1])-1]} ${p[0]}`;
+}
+function emptyState(icon, title, sub) {
+  return `<div class="empty-state"><div class="empty-icon">${icon}</div><div class="empty-title">${title}</div><div class="empty-sub">${sub}</div></div>`;
+}
+
+// =============================================
+// SHARE SITE / DOMAIN GUIDE
+// =============================================
+function openShareSiteModal() {
+  const modal = document.getElementById('domain-guide-modal');
+  const urlEl = document.getElementById('dg-current-url');
+  const siteUrl = window.location.href.split('#')[0];
+  urlEl.textContent = siteUrl;
+  modal.classList.add('show');
+}
+
+function closeDomainGuide() {
+  document.getElementById('domain-guide-modal').classList.remove('show');
+}
+
+function copyAndShareSiteUrl() {
+  const url = window.location.href.split('#')[0];
+  const copy = s => {
+    if (navigator.clipboard) navigator.clipboard.writeText(s).then(()=>showToast('✅ Link Copy Ho Gaya!')).catch(()=>fallbackCopyStr(s));
+    else fallbackCopyStr(s);
+  };
+  copy(url);
+}
+
+function fallbackCopyStr(text) {
+  const ta = document.createElement('textarea');
+  ta.value = text; ta.style.cssText='position:fixed;opacity:0;top:0;left:0;';
+  document.body.appendChild(ta); ta.focus(); ta.select();
+  try{document.execCommand('copy');}catch(e){}
+  document.body.removeChild(ta);
+  showToast('✅ Link Copy Ho Gaya!');
+}
+
+function shareSiteToWhatsApp() {
+  const url = window.location.href.split('#')[0];
+  const text = `🏏 *Mohit Cricket Tips*\n\nExpert Cricket Predictions & Live Tips!\n✅ Win Rate dekho\n🎯 Har match ki prediction\n🎬 Videos & Giveaways bhi!\n\n🔗 Link: ${url}`;
+  window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank');
+}
+
+function shareSiteToTelegram() {
+  const url = window.location.href.split('#')[0];
+  const text = `🏏 Mohit Cricket Tips — Expert Predictions & Live Tips! Win Rate dekho, tips share karo! ✅`;
+  window.open(`https://t.me/share/url?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}`, '_blank');
+}
+
+// =============================================
+// PWA INSTALL
+// =============================================
+let deferredPwaPrompt = null;
+
+window.addEventListener('beforeinstallprompt', e => {
+  e.preventDefault();
+  deferredPwaPrompt = e;
+  // Show banner after 3 sec if not dismissed before
+  const dismissed = localStorage.getItem('mct_pwa_dismissed');
+  if (!dismissed) {
+    setTimeout(() => {
+      const banner = document.getElementById('pwa-banner');
+      if (banner) banner.classList.add('show');
+    }, 3000);
+  }
+});
+
+window.addEventListener('appinstalled', () => {
+  const banner = document.getElementById('pwa-banner');
+  if (banner) banner.classList.remove('show');
+  deferredPwaPrompt = null;
+  showToast('🎉 App Install Ho Gaya!');
+});
+
+function triggerPwaInstall() {
+  dismissPwaBanner();
+  if (deferredPwaPrompt) {
+    deferredPwaPrompt.prompt();
+    deferredPwaPrompt.userChoice.then(choice => {
+      if (choice.outcome === 'accepted') showToast('🎉 App Install Ho Gaya!');
+      deferredPwaPrompt = null;
+    });
+  } else {
+    openApkModal();
+  }
+}
+
+function dismissPwaBanner() {
+  const banner = document.getElementById('pwa-banner');
+  if (banner) banner.classList.remove('show');
+  localStorage.setItem('mct_pwa_dismissed', '1');
+}
+
+function openApkModal() {
+  const modal = document.getElementById('apk-modal');
+  const urlEl = document.getElementById('apk-current-url');
+  if (urlEl) urlEl.textContent = window.location.href.split('#')[0];
+  if (modal) modal.classList.add('show');
+}
+
+function closeApkModal() {
+  const modal = document.getElementById('apk-modal');
+  if (modal) modal.classList.remove('show');
+}
+
+function installAndroid() {
+  if (deferredPwaPrompt) {
+    triggerPwaInstall();
+  } else {
+    showToast('Chrome Menu (⋮) → "Add to Home Screen" tap karo!');
+  }
+}
+
+function copyApkLink() {
+  const url = window.location.href.split('#')[0];
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(url).then(() => showToast('✅ Link Copy Ho Gaya!'));
+  } else {
+    fallbackCopyStr(url);
+  }
+}
+
+// =============================================
+// SERVICE WORKER REGISTRATION
+// =============================================
+if ('serviceWorker' in navigator) {
+  const swCode = `
+const CACHE = 'mct-v1';
+const ASSETS = ['./', './index.html'];
+self.addEventListener('install', e => {
+  e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)).catch(()=>{}));
+  self.skipWaiting();
+});
+self.addEventListener('activate', e => {
+  e.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))));
+  self.clients.claim();
+});
+self.addEventListener('fetch', e => {
+  if (e.request.method !== 'GET') return;
+  e.respondWith(
+    fetch(e.request).then(r => {
+      const clone = r.clone();
+      caches.open(CACHE).then(c => c.put(e.request, clone));
+      return r;
+    }).catch(() => caches.match(e.request))
+  );
+});
+  `;
+  const swBlob = new Blob([swCode], {type:'text/javascript'});
+  const swUrl = URL.createObjectURL(swBlob);
+  navigator.serviceWorker.register(swUrl).catch(()=>{});
+}
+
+// =============================================
+// STRUCTURED DATA (JSON-LD for Google SEO)
+// =============================================
+const jsonLd = document.createElement('script');
+jsonLd.type = 'application/ld+json';
+jsonLd.textContent = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Mohit Cricket Tips",
+  "description": "Expert cricket predictions, free tips, IPL analysis & win rate tracker",
+  "url": window.location.href.split('#')[0],
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": window.location.href.split('#')[0] + "?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Mohit"
+  },
+  "inLanguage": "hi-IN"
+});
+document.head.appendChild(jsonLd);
+
+// =============================================
+// MANIFEST BLOB INJECTION
+// =============================================
+(function() {
+  const manifest = {
+    name: "Mohit Cricket Tips",
+    short_name: "MCT Tips",
+    description: "Expert cricket predictions & free tips",
+    start_url: "./",
+    display: "standalone",
+    background_color: "#0a0e0a",
+    theme_color: "#00e676",
+    orientation: "portrait",
+    icons: [
+      { src: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==", sizes: "192x192", type: "image/png" }
+    ]
+  };
+  const blob = new Blob([JSON.stringify(manifest)], {type:'application/manifest+json'});
+  const link = document.createElement('link');
+  link.rel = 'manifest';
+  link.href = URL.createObjectURL(blob);
+  document.head.appendChild(link);
+})();
+
+// =============================================
+// INIT
+// =============================================
+loadAll();
+loadVisitorCount();
+displayVisitorCount();
+renderTips();
+updateStats();
+renderCheaters(); // to update badge
+
+// Deep link
+window.addEventListener('load', () => {
+  const hash = window.location.hash;
+  if (hash && hash.startsWith('#tip-')) {
+    setTimeout(() => {
+      const el = document.querySelector(hash);
+      if (el) { el.scrollIntoView({behavior:'smooth',block:'center'}); el.style.boxShadow='0 0 0 2px var(--green)'; setTimeout(()=>el.style.boxShadow='',2500); }
+    }, 300);
+  }
+});
+</script>
+</body>
+</html>
